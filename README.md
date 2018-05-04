@@ -1,5 +1,7 @@
 # JavaWeb_Employee
 简易的员工信息管理系统JavaBean+JSP+JDBC
+数据库：MySQL
+
 
 ## 实现的功能
 
@@ -20,6 +22,61 @@
 ## 效果图如下
 ![这里写图片描述](http://img.blog.csdn.net/20171215185126733)
 
+
+## 附上数据库表结构
+
+### 用户表：tb_applicant
+|字段|属性|索引|
+|:-|:-|:-|
+|applicant_id|int|主键
+|applicant_email|varchar|*
+|applicant_pwd|varchar|*
+
+### 用户简历表：tb_info_basicinfo
+|字段|属性|索引|
+|:-|:-|:-|
+|info_id|int|主键
+|age|int|*
+|job|varchar|*
+|experience|varchar|*
+|applicant_id|int|外键
+
+### 用户信息表：tb_resume_basicinfo
+|字段|属性|索引|
+|:-|:-|:-|
+|basicinfo_id|int|主键
+|name|varchar|*
+|phone|varchar|*
+|email|varchar|*
+|sex|varchar|*
+|applicant_id|int|外键
+
+### 用户工资表：tb_salary
+|字段|属性|索引|
+|:-|:-|:-|
+|salary_id|int|主键
+|post_salary|varchar|*
+|attendance_salary|varchar|*
+|bonus|varchar|*
+|total_salary|varchar|*
+|date|varchar|*
+|applicant_id|int|外键
+
+### 通知信息表：tb_notice
+|字段|属性|索引|
+|:-|:-|:-|
+|notice_id|int|主键
+|notice_title|varchar|*
+|notice_content|varchar|*
+|notice_date|varchar|*
+
+### 通知留言表：tb_message
+|字段|属性|索引|
+|:-|:-|:-|
+|notice_id|int|主键
+|message_content|varchar|*
+|notice_id|int|外键
+|applicant_id|int|外键
 
 
 PS：初学者，分包没有太明确。
