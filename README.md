@@ -4,6 +4,10 @@
 
 演示地址：http://maxcj.cn:8080/JavaWeb_Employee/
 
+测试账号：
+* 管理员：903283542@qq.com/zxcv123456
+* 用户（可自行注册）：1@qq.com/zxcv123456
+
 ## 实现的功能
 
 ### 员工
