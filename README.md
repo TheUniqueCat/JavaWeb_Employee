@@ -2,11 +2,7 @@
 简易的员工信息管理系统JavaBean+JSP+JDBC
 数据库：MySQL
 
-演示地址：http://maxcj.cn/JavaWeb_Employee/
-
-测试账号：
-* 管理员：903283542@qq.com/zxcv123456
-* 用户（可自行注册）：1@qq.com/zxcv123456
+~~演示地址：http://maxcj.cn/JavaWeb_Employee/~~
 
 ## 实现的功能
 
